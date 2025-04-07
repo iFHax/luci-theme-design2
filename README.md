@@ -1,5 +1,3 @@
-<img src="./preview/light.png"/> 
-
 # luci-theme-design
 
 **luci-theme-design** is a secondary development based on [luci-theme-neobird](https://github.com/thinktip/luci-theme-neobird), applicable for lede For Lean's OpenWRT Only [lede](https://github.com/coolsnowwolf/lede)
