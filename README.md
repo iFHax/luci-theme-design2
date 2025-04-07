@@ -44,25 +44,6 @@
 - Theme colors are personal preferences and may not suit everyone—color suggestions are welcome
 
 ## Manual Compilation
-
+<pre><code>
 git clone https://github.com/gngpp/luci-theme-design.git package/luci-theme-design make menuconfig # choose LUCI->Theme->Luci-theme-design
-make V=s
-
-
-## Preview (ps: fonts below on PC are macOS Safari fonts, only mobile shows correctly)
-
-<details> <summary>iOS</summary>
-<img src="./preview/webapp_home.PNG"/>
-<img src="./preview/webapp_vssr.PNG"/>
-</details>
-
-<details> <summary>iPadOS</summary>
-<img src="./preview/IMG_0328.PNG"/>
-<img src="./preview/IMG_0329.PNG"/>
-</details>
-
-<img src="./preview/login.png"/>
-<img src="./preview/home.png"/>
-<img src="./preview/home1.png"/>
-<img src="./preview/wifi.png"/>
-<img src="./preview/iface.png"/>
+make V=s</code></pre>
