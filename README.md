@@ -2,56 +2,54 @@
 
 # luci-theme-design
 
-**luci-theme-design**基于[luci-theme-neobird](https://github.com/thinktip/luci-theme-neobird)二次开发, 适用于lede For Lean's OpenWRT Only [lede](https://github.com/coolsnowwolf/lede)
+**luci-theme-design** is a secondary development based on [luci-theme-neobird](https://github.com/thinktip/luci-theme-neobird), applicable for lede For Lean's OpenWRT Only [lede](https://github.com/coolsnowwolf/lede)
 
-- 修复安装package提示信息背景泛白
-- 优化菜单缩放
-- 优化显示网口down状态显示图标
-- 优化logo显示
-- 新增各设备状态图标显示
-- 更换logo显示为字体"OpenWrt"，支持以主机名显示logo
-- 修复部分插件显示bug
-- 修复vssr状态bar
-- 修复诸多bug
-- 修复兼容部分插件样式
-- 修复aliyundrive-webdav样式
-- 修复vssr在iOS/iPadOS WebApp模式下显示异常
-- 修复openclash插件在iOS/iPadOS WebApp 模式下env(safe-area-inset-bottom) = 0
-- 优化菜单hover action状态分辨
-- 支持luci-app-wizard向导菜单
+- Fixed background whitening issue in package installation prompt
+- Optimized menu scaling
+- Optimized icon display for network port down status
+- Optimized logo display
+- Added status icons for various devices
+- Changed logo display to font "OpenWrt", supports displaying hostname as logo
+- Fixed display bugs in some plugins
+- Fixed vssr status bar
+- Fixed many bugs
+- Fixed compatibility styles for some plugins
+- Fixed aliyundrive-webdav styling
+- Fixed abnormal display of vssr in iOS/iPadOS WebApp mode
+- Fixed openclash plugin showing `env(safe-area-inset-bottom) = 0` in iOS/iPadOS WebApp mode
+- Optimized menu hover action recognition
+- Supports luci-app-wizard menu
 - Update header box-shadow style
 - Update uci-change overflow
 - Fix nlbw component
 - Added QSDK/QWRT wizard and iStore menu icon fonts
 
-## 主要特点
+## Main Features
 
-- 针对移动端优化，特别适合手机端做为webapp使用
-- 修改和优化了很多插件显示，完善的icon图标，尽量视觉统一
-- 简洁的登录界面，底部导航栏，类App的沉浸式体验；
-- 适配深色模式，适配系统自动切换；
+- Optimized for mobile devices, especially suitable as a WebApp on phones
+- Modified and optimized many plugin displays, complete icon set for visual consistency
+- Simple login interface, bottom navigation bar, app-like immersive experience
+- Supports dark mode, adapts to system auto-switching
 
-## 体验Webapp方法
+## How to Experience the WebApp
 
-- 在移动端(iOS/iPadOS)浏览器打开管理界面，添加到主屏幕即可。
-- 想要实现完全的沉浸式（无浏览器导航、无地址栏等）体验，需要使用SSL证书，请自行申请域名、证书、安装并启用。
-- 如果不使用SSL证书，基于安全原因，iOS/iPadOS 在打开新的页面后，将会显示浏览器顶部菜单栏。
+- Open the management interface in a mobile browser (iOS/iPadOS) and add it to the home screen
+- For full immersive experience (no browser navigation, no address bar), use an SSL certificate. Please apply for a domain and certificate, install and enable it
+- Without SSL, due to security reasons, iOS/iPadOS will show the browser's top menu bar when opening new pages
 
 ## PS
 
-- 资源接口icon未完善，如果有能力画图的欢迎pr，但请确保跟现有icon颜色风格一致
-- 有bug欢迎提issue
-- 主题个人配色可能会不符合大众胃口，欢迎提配色建议
+- Resource interface icons are not fully complete. If you can draw, PRs are welcome—but please keep icon colors and style consistent
+- Bugs are welcome via issues
+- Theme colors are personal preferences and may not suit everyone—color suggestions are welcome
 
-## 自行编译
+## Manual Compilation
 
-```
-git clone https://github.com/gngpp/luci-theme-design.git  package/luci-theme-design
-make menuconfig # choose LUCI->Theme->Luci-theme-design  
+git clone https://github.com/gngpp/luci-theme-design.git package/luci-theme-design make menuconfig # choose LUCI->Theme->Luci-theme-design
 make V=s
-```
 
-## 预览(ps: 下面PC端普通字体为苹果浏览器字体，只有移动端是正常显示的)
+
+## Preview (ps: fonts below on PC are macOS Safari fonts, only mobile shows correctly)
 
 <details> <summary>iOS</summary>
 <img src="./preview/webapp_home.PNG"/>
@@ -68,4 +66,3 @@ make V=s
 <img src="./preview/home1.png"/>
 <img src="./preview/wifi.png"/>
 <img src="./preview/iface.png"/>
-
